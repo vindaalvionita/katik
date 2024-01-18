@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="katik">Katik</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="assets/icon.png">
+        <script src="./js/index.js"></script>
+    </head>
+    <body>
+        <header id="navigation-bar">
+            <img src="assets/icon.png" width="50px" height="50px">
+            <h1 id="logo">Katik</h1>
+        </header>
+        <section class="input-luas-section">
+            <div class="judul">
+                <h3>Menghitung Luas Segitiga</h3>
+            </div>
+            <div class="imgs">
+                <img src="assets/luas.jpeg" width="300px" height="200px">
+            </div>
+            <label for="tinggi" id="label-tinggi">Tinggi</label>
+            <input type="number" id="tinggi" class="katik-input" placeholder="Masukkan Tinggi" required>
+            <label for="alas" id="label-alas">Alas</label>
+            <input type="number" id="alas" class="katik-input" placeholder="Masukkan Alas" required>
+            <div class="buttons">
+                <button id="hitungluas" onclick="luas()">Hitung</button>
+                <button id="resetluas" onclick="resetluas()">Reset</button>
+            </div>
+            <div id="outputluas"></div> 
+        </section>
+        <section class="input-keliling-section">
+            <div class="judul">
+                <h3>Menghitung Keliling Segitiga</h3>
+            </div>
+            <div class="imgs">
+                <img src="assets/keliling.jpeg" width="300px" height="200px">
+            </div>
+            <label for="sisi1" id="label-sisi1">Sisi 1</label>
+            <input type="number" id="sisi1" class="katik-input" placeholder="Masukkan Sisi 1" required>
+            <label for="sisi2" id="label-sisi2">Sisi 2</label>
+            <input type="number" id="sisi2" class="katik-input" placeholder="Masukkan Sisi 2" required>
+            <label for="sisi3" id="label-sisi3">Sisi 3</label>
+            <input type="number" id="sisi3" class="katik-input" placeholder="Masukkan Sisi 3" required>
+            <div class="buttons">
+                <button id="hitungkel" onclick="keliling()">Hitung</button>
+                <button id="resetkel" onclick="resetkel()">Reset</button>
+            </div>
+            <div id="outputkel"></div>
+        </section>
+    </body>
+</html>
